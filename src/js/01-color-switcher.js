@@ -11,7 +11,7 @@ let timer;
 startBtn.addEventListener('click', () => {
   startBtn.setAttribute('disabled', '');
   stopBtn.removeAttribute('disabled');
-  timer = setInterval(updateColor, 1000);
+  timer = setInterval(colorUpdate, 1000);
 });
 
 stopBtn.addEventListener('click', () => {
