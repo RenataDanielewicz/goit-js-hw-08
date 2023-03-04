@@ -4,7 +4,7 @@ const bodySection = document.querySelector('body');
 const startBtn = document.querySelector('button[data-start]');
 const stopBtn = document.querySelector('button[data-stop]');
 
-stopButton.setAttribute('disabled', '');
+stopBtn.setAttribute('disabled', '');
 
 let timer;
 
@@ -14,7 +14,7 @@ startBtn.addEventListener('click', () => {
   timer = setInterval(updateColor, 1000);
 });
 
-stopButton.addEventListener('click', () => {
+stopBtn.addEventListener('click', () => {
   clearInterval(timer);
   startBtn.removeAttribute('disabled');
   stopBtn.setAttribute('disabled', '');
